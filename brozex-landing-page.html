@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brozex - Clients de jeux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .login-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 2px solid #45a049;
+        }
+        .login-btn::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            z-index: -1;
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+        .login-btn:hover::before {
+            opacity: 1;
+        }
+        .login-btn:hover {
+            color: #fff;
+            background-color: transparent;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        .game-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .game-card h3 {
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+        .titlebrozex {
+            color: #002bff;
+        }
+        .valoranttitle {
+            color:#ff00c8;
+            text-align: center;
+        
+        }
+        .valorantimg {
+            width: 99%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-name-brozex.png">
+        <a href="https://sites.google.com/view/connexion-to-brozex" class="login-btn">Login</a>
+    </header>
+    <main>
+        <h2>Bienvenue sur Brozex</h2>
+        <p>Découvrez nos clients personnalisés pour vos jeux préférés :</p>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://gamefreaks365.com/wp-content/uploads/2022/06/Minecraft-Bedrock-Java-Edition-1536x864.jpg" alt="Minecraft">
+                <h3>Minecraft</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://th.bing.com/th/id/OIP.GSnO2Eie9NtsS83kIh-67QHaEK?rs=1&pid=ImgDetMain" alt="Valorant">
+                <h3>Valorant</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://th.bing.com/th/id/OIP.rWzDpI0XfaOdEU88H2AOmQAAAA?rs=1&pid=ImgDetMain" alt="Counter-Strike 2">
+                <h3>Counter-Strike 2</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://cdn.wccftech.com/wp-content/uploads/2019/02/apex-legends-keyart.jpg" alt="Apex Legends">
+                <h3>Apex Legends</h3>
+            </div>
+        </div>
+        <p>Nos clients de cheats offrent des fonctionnalités améliorées pour une expérience de jeu optimale.</p>
+        <p>En téléchargant nos clients personnalisés, vous aurez accès à un menu directement dans le jeu permettant d'avoir un avantage sur les ennemis.</p>
+        <p>Vous pouvez téléchargez nos clients de cheats directements à la fin de cette page ou vous pouvez vous connectez ("Login") pour découvrir plus de cheats et recevoir des notifications quand de nouveaux clients de cheats sont mis à jour.</p>
+        <h1 class="valoranttitle">Valorant</h1>
+        <img class="valorantimg" src="https://user-images.githubusercontent.com/125588675/219785125-3b814b78-a19a-4979-84f5-39586127c7a5.png">
+        <p>Version 1.2.4</p>
+        <p> </p>
+        <h1 class="valoranttitle">Minecraft Bedrock</h1>
+        <img class="valorantimg" src="https://data.exloader.net/compressed_images/Paragon/menu.jpg"> 
+        <p>Version 1.21.6+</p>
+        <p> </p>
+        <h1 class="valoranttitle">Counter-Strike 2</h1>
+        <img class="valorantimg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6gibvC_pDQlAUZDpw5ZUsopsS-wqkMg-nyo4uRoVeqZF8VOU_gscwiySPGXvgG_bipAjwwagIVUWMBNLHKqZHi6Hjww-NLmTOEk83nfj02TiWmeNGQVgBatEEeb304wBoQ6qekjS-EaNC0Q3Ddm45pGp53WKXQpulro57Bi09RDZon59SjPMFIc039y81/s1600/CowNow-AimStar-Counter-Strike-2-Rules-Of-Cheaters.png"> 
+        <p>Version 1.7.8+</p>
+        <p> </p>
+        <h1 class="valoranttitle">Apex-Legends</h1>
+        <img class="valorantimg" src="https://demonicsoftware.net/wp-content/uploads/2023/06/Screenshot2023-04-18113645.png"> 
+        <p>Version 1.7.8+</p>
+        <p> </p>
+        <a href="brozex-download-page.html" class="login-btn">Download Page</a>            
+    </main>
+</body>
+</html>

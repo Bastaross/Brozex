@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brozex - Téléchargement</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f1a;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1a1a2e;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, #ff00ff, #00ff00, #ff00ff, #00ff00);
+            animation: glowing 20s linear infinite;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        header * {
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes glowing {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .download-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .download-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .download-btn::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff00ff, #00ff00, #00ffff, #ff00ff);
+            z-index: -1;
+            filter: blur(5px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .download-btn:hover::before {
+            opacity: 1;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.8);
+        }
+        .features {
+            margin-top: 3rem;
+            background-color: #1a1a2e;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 1rem;
+            padding-left: 30px;
+            position: relative;
+        }
+        .features li::before {
+            content: '✓';
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brozex - Téléchargement</h1>
+    </header>
+    <main>
+        <section class="download-section">
+            <img src="logo-brozex.png" alt="Brozex Client" class="download-image">
+            <a href="avertissement.html" class="download-btn">Download</a>
+        </section>
+        <section class="features">
+            <h2>Fonctionnalités du client Brozex</h2>
+            <ul>
+                <li>Interface personnalisable</li>
+                <li>Optimisation des performances</li>
+                <li>Mods intégrés pour une expérience améliorée</li>
+                <li>Compatibilité avec les principaux jeux</li>
+                <li>Mises à jour automatiques</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
